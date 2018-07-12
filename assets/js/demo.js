@@ -1,7 +1,7 @@
 /*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Utilly by Nick Williamson (@koodeau)
+	utilly.github.io | @koodeau
+	Free for personal and commercial use under the MIT license (see LICENSE file)
 
 	Note: Only needed for demo purposes. Delete for production sites.
 */
