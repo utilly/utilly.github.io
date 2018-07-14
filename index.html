@@ -11,6 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--<script src="assets/js/jquery.min.js"></script>-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="assets/src/ajax.js"></script>
+		<!--<script src="LICENSE/LICENSE.js"></script>-->
 	</head>
 	<body class="is-preload">
 
@@ -21,7 +25,7 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Utilly</h1>
-							<p class="major">A (modular, highly tweakable) responsive website with all types of uselessness utilities developed by <a href="https://about.me/koodeau">Nick Williamson</a> and released for free under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>.</p>
+							<p class="major">A (modular, highly tweakable) responsive website with all types of uselessness utilities developed by <a href="https://about.me/koodeau">Nick Williamson</a> and released for free under the <a href="LICENSE/LICENSE" id="license">MIT License</a>.</p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
 							</ul>
@@ -378,7 +382,7 @@
 											<h2>Get in touch</h2>
 										<div class="content">
 
-											<form method="post" action="#">
+											<form method="post" id="ajax_form" action="">
 												<div class="fields">
 													<div class="field half">
 														<label for="name">Name</label>
@@ -430,6 +434,7 @@
 
 										</div>
 									</div>
+									<div id="result_form"></div>
 									</section>
 
 
