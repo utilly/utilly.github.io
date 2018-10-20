@@ -10,9 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="assets/js/jquery.js" type="text/javascript"></script>
-		<script src="assets/js/validate.min.js" type="text/javascript"></script>
-		<script src="assets/js/init.js" type="text/javascript"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!--<script src="assets/js/jquery.min.js"></script>-->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -44,7 +41,8 @@
 							<h2>Calculator</h2>
 							<p>Simple site-replaced online calculator used for making mathematical calculations, in particular a small electronic device with a keyboard and a visual display, but in a one website.</p>
 							<ul class="actions stacked">
-								<li><a href="calculator/index.html" class="button">Calculate</a></li>
+								<li><a href="error/" class="button">Calculate</a></li>
+								<!--<li><a href="calculator/index.html" class="button">Calculate</a></li>-->
 							</ul>
 						</div>
 						<div class="image">
@@ -58,7 +56,8 @@
 							<h2>Time</h2>
 							<p>Time is the indefinite continued progress of existence and events that occur in apparently irreversible succession from the past through the present to the future. The site is also provide a lot of different tools: stopwatch, timer, alarm, clock and etc.</p>
 							<ul class="actions stacked">
-								<li><a href="time/index.html" class="button">Watch</a></li>
+									<li><a href="error/" class="button">Watch</a></li>
+								<!-- <li><a href="time/index.html" class="button">Watch</a></li> -->
 							</ul>
 						</div>
 						<div class="image">
@@ -72,7 +71,8 @@
 							<h2>Converter</h2>
 							<p>Here collected some different converters such as units and time.</p>
 							<ul class="actions stacked">
-								<li><a href="converter/index.html" class="button">Convert</a></li>
+									<li><a href="error/" class="button">Convert</a></li>
+								<!-- <li><a href="converter/index.html" class="button">Convert</a></li> -->
 							</ul>
 						</div>
 						<div class="image">
@@ -87,7 +87,8 @@
 							<h2>Download Time Calculator</h2>
 							<p>Do you know how much time left until your downloading movie or game ends? Then press button below and you can easily calculate how much time left until your download ends.</p>
 							<ul class="actions stacked">
-								<li><a href="dtc/index.html" class="button">Calculate</a></li>
+									<li><a href="error/" class="button">Calculate</a></li>
+								<!-- <li><a href="dtc/index.html" class="button">Calculate</a></li> -->
 							</ul>
 						</div>
 						<div class="image">
@@ -100,7 +101,7 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h1>Donate</h1>
-							<p>Would you like to keep this service free? Be my patron on Patreon and help me for my work to keep this service free and clean. I will always analyze traffic to make Utilly safe place and always check and solve all known bugs and errors. Feel free to tell me about some bugs and errors and if you are developer to help me solve them on <a href="https://github.com/utilly/utilly.github.io">GitHub</a>.</p>
+							<p>Would you like to keep this service free? Become my patron on Patreon and help me for my work to keep this service free and clean. I will always analyze traffic to make Utilly safe place and always check and solve all known bugs and errors. Feel free to tell me about some bugs and errors and if you are developer to help me solve them on <a href="https://github.com/utilly/utilly.github.io">GitHub</a>.</p>
 							<!--<ul class="actions stacked">
 								<li><a href="https://www.patreon.com/bePatron?c=1733056" class="button big wide smooth-scroll-middle">Donate</a></li>
 							</ul>-->
@@ -345,31 +346,27 @@
 
 
 
-<!--   	PREVIOUS FORM -->				<!-- Eight -->
+<!--   	PREVIOUS FORM				<!-- Eight ->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<form method="post" action="#" id="form">
+							<form method="post" action="#">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" placeholder="John Doe" />
-									</div>
-									<div class="field half">
-										<label for="name">Phone</label>
-										<input type="text" name="phone" id="phone" value="" placeholder="8001231100" />
+										<input type="text" name="name" id="name" value="" />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" placeholder="name@domain.com" />
+										<input type="email" name="email" id="email" value="" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6" placeholder="Start writing your message here ..."></textarea>
+										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
 								</div>
 								<ul class="actions special">
-									<li><input type="submit" name="submit" class="btn" id="submit" value="Send Message" /></li>
+									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
 								</ul>
 							</form>
 
@@ -378,22 +375,22 @@
 
 
 
+-->
 
 
 
 
-
-								<!-- Form --><!--
+								<!-- Form -->
 									<section class="wrapper style1 align-center">
 										<div class="inner medium" id="form">
 											<h2>Get in touch</h2>
 										<div class="content">
 
-											<form method="post" id="ajax_form" action="">
+											<form method="post" id="ajax_form" action="mailto:utilly@null.net" enctype="text/plain">
 												<div class="fields">
 													<div class="field half">
 														<label for="name">Name</label>
-														<input type="text" name="name" id="name" value="" placeholder="Adam Smith" />
+														<input type="text" name="name" id="name" value="" placeholder="John Rockfeller" />
 													</div>
 													<div class="field half">
 														<label for="email">Email</label>
@@ -402,11 +399,12 @@
 													<div class="field">
 														<label for="department">Department</label>
 														<select name="department" id="department">
-															<option value="">- Category -</option>
-															<option value="1">Design</option>
-															<option value="2">Bugs & Errors</option>
-															<option value="3">Donate</option>
-															<option value="4">Human Resources</option>
+															<option value=""> - Category - </option>
+															<option value="1">Content</option>
+															<option value="2">Design</option>
+															<option value="3">Bugs & Errors</option>
+															<option value="4">Donation</option>
+															<option value="5">Human Resources</option>
 														</select>
 													</div>
 													<div class="field third">
@@ -442,7 +440,7 @@
 										</div>
 									</div>
 									<div id="result_form"></div>
-									</section> -->
+									</section>
 
 
 
@@ -456,7 +454,7 @@
 								<li><a href="https://twitter.com/koodeau" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="https://facebook.com/koodeau" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 								<li><a href="https://instagram.com/kooodeau" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/koodeau" class="icon style2 fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://github.com/utilly" class="icon style2 fa-github"><span class="label">Github</span></a></li>
 								<li><a href="https://flickr.com/people/koodeau" class="icon style2 fa-flickr"><span class="label">Flickr</span></a></li>
 
 								<!-- <li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
