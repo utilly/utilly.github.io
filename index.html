@@ -11,73 +11,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/jquery.js"></script>
+		<script src="js/modernizr.js"></script> <!-- Modernizr -->
+		<script src="assets/js/faq.js"></script>
 		<!--<script src="assets/js/jquery.min.js"></script>-->
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script src="assets/src/ajax.js"></script>
-		<script type="text/javascript" src="assets/js//captcha.js"></script> 
-
-
-		<script type='text/javascript'>//<![CDATA[
-			/* window.onload=function(){
-			(function () {
-			var textFile = null,
-			  makeTextFile = function (text) {
-				var data = new Blob([text], {type: 'text/plain'});
-			
-				// If we are replacing a previously generated file we need to
-				// manually revoke the object URL to avoid memory leaks.
-				if (textFile !== null) {
-				  window.URL.revokeObjectURL(textFile);
-				}
-			
-				textFile = window.URL.createObjectURL(data);
-			
-				return textFile;
-			  };
-			
-			
-			  var create = document.getElementById('create'),
-				textbox = document.getElementById('textbox');
-			
-			  create.addEventListener('click', function () {
-				var link = document.getElementById('downloadlink');
-				link.href = makeTextFile(textbox.value);
-				link.style.display = 'block';
-			  }, false);
-			})();
-			
-			} *///]]> 
-
-			// This will generate the text file content based on the form data
-
-			function buildData(){
-    var txtData = "Name: "+$("#name").val()+
-			"\r\nEmail: "+$("#email").val()+
-			"\r\nDepartment: "+$("#department").val()+
-			"\r\nPriority: "+$("#priority").val()+
-			// "\r\nGender: "+($("#genderMale").is(":checked")?"Male":"Female");
-			"\r\nMessage: "+$("#message").val()
-
-    return txtData;
-}
-// This will be executed when the document is ready
-$(function(){
-    // This will act when the submit BUTTON is clicked
-    $("#formToSave").submit(function(event){
-        event.preventDefault();
-        var txtData = buildData();
-        window.location.href="data:application/octet-stream;base64,"+Base64.encode(txtData);
-    });
-
-    // This will act when the submit LINK is clicked
-    $("#submitLink").click(function(event){
-        var txtData = buildData();
-        $(this).attr('download','sugguestedName.txt')
-            .attr('href',"data:application/octet-stream;base64,"+Base64.encode(txtData));
-    });
-});
-			
-			</script>
+		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
+		<!-- <script src="assets/src/ajax.js"></script> -->
+		<!-- <script type="text/javascript" src="assets/js/base64.js"></script> -->
+		<!-- <script type="text/javascript" src="assets/js/captcha.js"></script>  -->
+		<!-- <script type='text/javascript' src="assets/js/form.js"></script> -->
 
 
 
@@ -93,7 +35,7 @@ $(function(){
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1>Utilly</h1>
+							<h1 class="hide-text"><span class="icon fa-leaf"></span> Utilly</h1>
 							<p class="major">A (modular, highly tweakable) responsive website with all types of uselessness utilities developed by <a href="https://about.me/koodeau">Nick Williamson</a> and released for free under the <a href="LICENSE/LICENSE" id="license">MIT License</a>.</p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
@@ -188,15 +130,14 @@ $(function(){
 								<br>Are you a good developer: <code>System.out.println("Hello World!");</code>???     So, help me, support a project on <a href="https://github.com/utilly/utilly.github.io">GitHub</a>.</p>
 							<h4>Or support us on social media</h4>
 									<ul class="icons">
-										<li><a href="#" class="icon style1 fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon style1 fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon style1 fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon style1 fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="https://twitter.com/koodeau" class="icon style1 fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://facebook.com/koodeau" class="icon style1 fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="https://instagram.com/kooodeau" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://github.com/utilly" class="icon style1 fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://flickr.com/people/koodeau" class="icon style1 fa-flickr"><span class="label">Flickr</span></a></li>
 									</ul>
-							<!--<ul class="actions stacked">
-								<li><a href="https://www.patreon.com/bePatron?c=1733056" class="button big wide smooth-scroll-middle">Donate</a></li>
-							</ul>-->
+
+
 							<ul class="actions stacked">
 							<li><a href="https://www.patreon.com/bePatron?c=1733056" class="button primary icon fa-dollar">Donate</a></li>
 							</ul>
@@ -378,7 +319,7 @@ $(function(){
 									<p>The design of Utilly is much better than any other service I ever saw until now, because i decided to develop the most beautiful utility website. And today you can use my elite Utilly absolutely free.</p>
 								</section>
 								<section>
-									<span class="icon style2 major fa-save"></span>
+									<span class="icon style2 major fa-cloud"></span>
 									<h3>Cloud-Based</h3>
 									<p>Utilly is absolutely online and this is advantage over other services because you will never download any of it. This will save your hard drive memory and keep your computer or mobile phone free from malware.</p>
 								</section>
@@ -439,7 +380,7 @@ $(function(){
 
 
 
-<!--   	PREVIOUS FORM				<!-- Eight ->
+<!--   	PREVIOUS FORM				 Eight ->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
@@ -468,30 +409,30 @@ $(function(){
 
 
 
--->
 
 
 
 
-								<!-- Form -->
+
+
 									<section class="wrapper style1 align-center">
 										<div class="inner medium" id="form">
 											<h2>Get in touch</h2>
 										<div class="content">
 
-											<form method="post" id="ajax_form" action="" enctype="text/plain" onload="Captcha();">
+											<form method="post" id="txtForm" action="" enctype="text/plain">
 												<div class="fields">
 													<div class="field half">
 														<label for="name">Name</label>
-														<input type="text" name="name" id="name" value="" placeholder="John Rockfeller" />
+														<input type="text" name="name" id="name" value="" placeholder="John Rockfeller" onclick="Captcha();" />
 													</div>
 													<div class="field half">
 														<label for="email">Email</label>
-														<input type="email" name="email" id="email" value="" placeholder="name@domain.com" />
+														<input type="email" name="email" id="email" value="" placeholder="name@domain.com" onclick="Captcha();" />
 													</div>
 													<div class="field">
 														<label for="department">Department</label>
-														<select name="department" id="department">
+														<select name="department" id="department" onclick="Captcha();">
 															<option value=""> - Category - </option>
 															<option value="1">Content</option>
 															<option value="2">Design</option>
@@ -501,33 +442,36 @@ $(function(){
 														</select>
 													</div>
 													<div class="field third" id="priority">
-														<input type="radio" id="priority-low" name="priority" checked />
+														<input type="radio" id="priority-low" onclick="Captcha();" name="priority" checked />
 														<label for="priority-low">Low Priority</label>
 													</div>
 													<div class="field third">
-														<input type="radio" id="priority-normal" name="priority" />
+														<input type="radio" id="priority-normal" name="priority" onclick="Captcha();" />
 														<label for="priority-normal">Normal Priority</label>
 													</div>
 													<div class="field third">
-														<input type="radio" id="priority-high" name="priority" />
+														<input type="radio" id="priority-high" name="priority" onclick="Captcha();" />
 														<label for="priority-high">High Priority</label>
 													</div>
 													<div class="field">
 														<label for="message">Message</label>
-														<textarea name="message" id="message" rows="6" placeholder="Enter your message here ..." ></textarea>
+														<textarea name="message" id="message" rows="6" placeholder="Enter your message here ..." onclick="Captcha();"></textarea>
 													</div>
-<!-- 													<div class="field half">
+
+
+
+													<div class="field half">
 														<input type="checkbox" id="copy" name="copy" checked />
 														<label for="copy">Email me a copy of this message</label>
-													</div> -->
+													</div>
 
 									
-														<!-- <input type="checkbox" id="human" name="human" />
-														<label for="human">I am a human and not a robot</label> -->
+														 <input type="checkbox" id="human" name="human" />
+														<label for="human">I am a human and not a robot</label>
 														<div class="field">
 														<div class="capt"> 
 															<label for="captcha"><h3><span style="color: red">Captcha</span>*</h3></label>
-																<p style="opacity: 0.35;">It's *<b>required</b> to complete to know that you are human and not a robot. We need it to avoid spamming from different people, apps, bots, scripts and even malvare. Click on the button below to get your code, if its hard to you to recognize, so you can tap on Refresh button again and get new code.</p>
+																<p style="opacity: 0.4;">It's *<b>required</b> to complete to know that you are human and not a robot. We need it to avoid spamming from different people, apps, bots, scripts and even malvare. Click on the button below to get your code, if its hard for you to recognize, so you can tap on Refresh button again and get new code.</p>
 
 																<h2 class="hide-text" type="text" id="mainCaptcha"></h2>
 																<a type="button" class="button icon fa-refresh" id="refresh" onclick="Captcha();">Refresh</a>
@@ -554,6 +498,41 @@ $(function(){
 									</div>
 									<div id="result_form"></div>
 									</section>
+	-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="container"> 
+
+
+
+				<!-- GET IN TOUCH -->
+				<section class="wrapper style1 align-center" id="form">
+					<div class="inner">
+						<h1>Get in touch</h1>
+						<p>If you have some questions, you can simply click the button bellow and it will redirect to our Official Facebook page where you can ask us a question.
+						</p>		
+						<ul class="actions stacked">
+						<li>
+							<a href="https://www.messenger.com/t/utilly" class="button primary icon fa-paper-plane">Message</a>
+							<a href="faq" class="button primary icon fa-question">FAQ</a>
+						</li>
+						</ul>
+					</div>
+				</section>
+
+
+
 
 
 
@@ -580,6 +559,7 @@ $(function(){
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/jquery.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -587,6 +567,7 @@ $(function(){
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/faq.js"></script>
 
 	</body>
 </html>
