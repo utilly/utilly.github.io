@@ -327,6 +327,14 @@ input, select, textarea {
 			color: #E0C3FC;
 		}
 
+		#beta-link {
+			color: #EB0000;
+		}
+
+		#beta-link:hover {
+			color: #C43959;
+		}
+
 	strong, b {
 		color: #000000;
 	}
