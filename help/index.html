@@ -8,12 +8,14 @@
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="/assets/js/application.js"></script>
+	<link rel="stylesheet" href="/assets/css/application.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<title>Help Center</title>
 </head>
 <body>
 <header>
-	<h1><a href="../">Utilly</a> <span style="color: #000000;">Help Center</span></h1>
+	<h1><a href="../" style="color: #E0C3FC">Utilly</a> <span style="color: #000000;">Help Center</span></h1>
 </header>
 <section class="cd-faq">
 	<ul class="cd-faq-categories">
@@ -29,9 +31,291 @@
 		<ul id="basics" class="cd-faq-group">
 			<li class="cd-faq-title"><h2>Basics</h2></li>
 			<li>
-				<a class="cd-faq-trigger" href="#0">How do I change my password?</a>
+				<a class="cd-faq-trigger" href="#0">How do I Fork a Repo?</a>
 				<div class="cd-faq-content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quidem blanditiis delectus corporis, possimus officia sint sequi ex tenetur id impedit est pariatur iure animi non a ratione reiciendis nihil sed consequatur atque repellendus fugit perspiciatis rerum et. Dolorum consequuntur fugit deleniti, soluta fuga nobis. Ducimus blanditiis velit sit iste delectus obcaecati debitis omnis, assumenda accusamus cumque perferendis eos aut quidem! Aut, totam rerum, cupiditate quae aperiam voluptas rem inventore quas, ex maxime culpa nam soluta labore at amet nihil laborum? Explicabo numquam, sit fugit, voluptatem autem atque quis quam voluptate fugiat earum rem hic, reprehenderit quaerat tempore at. Aperiam.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+														<div class="article js-hide-during-search">
+
+											<h2>Fork a repo</h2>
+
+											<div id="article-platform-nav">
+									<ul>
+										<li class="platform-mac">
+										<a href="#platform-mac" data-platform="mac">
+											mac
+										</a>
+										</li>
+										<li class="platform-windows">
+										<a href="#platform-windows" data-platform="windows">
+											windows
+										</a>
+										</li>
+										<li class="platform-linux">
+										<a href="#platform-linux" data-platform="linux">
+											linux
+										</a>
+										</li>
+										<li class="platform-all">
+										<a href="#platform-all" data-platform="all">
+											all
+										</a>
+										</li>
+									</ul>
+									</div>
+
+
+											<div class="article-body content-body wikistyle markdown-format">
+											<div class='intro'>
+
+											
+
+											</div>
+
+											<div class="intro">
+
+									<p>A <em>fork</em> is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.</p>
+
+									</div>
+
+									<p>Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.</p>
+
+									<h5>
+									<a id="propose-changes-to-someone-elses-project" class="anchor" href="#propose-changes-to-someone-elses-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Propose changes to someone else's project</h5>
+
+									<p>A great example of using forks to propose changes is for bug fixes. Rather than logging an issue for a bug you've found, you can:</p>
+
+									<ul>
+									<li>Fork the repository.</li>
+									<li>Make the fix.</li>
+									<li>Submit a <em>pull request</em> to the project owner.</li>
+									</ul>
+
+									<p>If the project owner likes your work, they might pull your fix into the original repository!</p>
+
+									<h5>
+									<a id="use-someone-elses-project-as-a-starting-point-for-your-own-idea" class="anchor" href="#use-someone-elses-project-as-a-starting-point-for-your-own-idea" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Use someone else's project as a starting point for your own idea.</h5>
+
+									<p>At <a href="http://opensource.org/about">the heart of open source</a> is the idea that by sharing code, we can make better, more reliable software.</p>
+
+									<p>When creating your public repository from a fork of someone's project, make sure to include a <a href="http://choosealicense.com/">license file</a> that determines how you want your project to be shared with others.</p>
+
+									<p>For more information on open source, specifically how to create and grow an open source project, we've created <a href="https://opensource.guide/">Open Source Guides</a> that will help you foster a healthy open source community by recommending best practices for creating and maintaining repositories for your open source project.
+									You can also take a free <a href="https://lab.github.com/">GitHub Learning Lab</a> course on maintaining open source communities.</p>
+
+									<h3>
+									<a id="fork-an-example-repository" class="anchor" href="#fork-an-example-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fork an example repository</h3>
+
+									<p>Forking a repository is a simple two-step process. We've created a repository for you to practice with!</p>
+
+									<ol>
+									<li>On GitHub, navigate to the <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a> repository.</li>
+									<li>In the top-right corner of the page, click <strong>Fork</strong>.
+									<img src="/assets/images/help/repository/fork_button.jpg" alt="Fork button">
+									</li>
+									</ol>
+
+									<p>That's it! Now, you have a <em>fork</em> of the original octocat/Spoon-Knife repository.</p>
+
+									<h3>
+									<a id="keep-your-fork-synced" class="anchor" href="#keep-your-fork-synced" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Keep your fork synced</h3>
+
+									<p>You might fork a project in order to propose changes to the <em>upstream</em>, or original, repository. In this case, it's good practice to regularly sync your fork with the upstream repository. To do this, you'll need to use Git on the command line. You can practice setting the upstream repository using the same <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a> repository you just forked!</p>
+
+									<h4>
+									<a id="step-1-set-up-git" class="anchor" href="#step-1-set-up-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 1: Set up Git</h4>
+
+									<p>If you haven't yet, you should first <a href="/articles/set-up-git">set up Git</a>. Don't forget to <a href="/articles/set-up-git#next-steps-authenticating-with-github-from-git">set up authentication to GitHub from Git</a> as well.</p>
+
+									<h4>
+									<a id="step-2-create-a-local-clone-of-your-fork" class="anchor" href="#step-2-create-a-local-clone-of-your-fork" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 2: Create a local clone of your fork</h4>
+
+									<p>Right now, you have a fork of the Spoon-Knife repository, but you don't have the files in that repository on your computer. Let's create a <em>clone</em> of your fork locally on your computer.</p>
+
+									<ol>
+									<li>On GitHub, navigate to <strong>your fork</strong> of the Spoon-Knife repository.</li>
+									<li>Under the repository name, click <strong>Clone or download</strong>.
+									<img src="/assets/images/help/repository/clone-repo-clone-url-button.png" alt="Clone or download button">
+									</li>
+									<li><p>In the Clone with HTTPs section, click <span class="octicon octicon-clippy" aria-label="The clipboard icon " title="The clipboard icon "></span> to copy the clone URL for the repository.
+									<img src="/assets/images/help/repository/https-url-clone.png" alt="Clone URL button"></p></li>
+									<li><p>Open <span class="platform-mac">Terminal</span><span class="platform-linux">Terminal</span><span class="platform-windows">Git Bash</span>.</p></li>
+									<li>
+									<p>Type <code>git clone</code>, and then paste the URL you copied in Step 2. It will look like this, with your GitHub username instead of <code>YOUR-USERNAME</code>:</p>
+
+									<pre class="command-line">
+									<span class="command">git clone https://github.com/<em>YOUR-USERNAME</em>/Spoon-Knife</span>
+									</pre>
+									</li>
+									<li>
+									<p>Press <strong>Enter</strong>. Your local clone will be created.</p>
+
+									<pre class="command-line">
+									<span class="command">git clone https://github.com/<em>YOUR-USERNAME</em>/Spoon-Knife</span>
+									<span class="output">Cloning into `Spoon-Knife`...</span>
+									<span class="output">remote: Counting objects: 10, done.</span>
+									<span class="output">remote: Compressing objects: 100% (8/8), done.</span>
+									<span class="output">remove: Total 10 (delta 1), reused 10 (delta 1)</span>
+									<span class="output">Unpacking objects: 100% (10/10), done.</span>
+									</pre>
+									</li>
+									</ol>
+
+									<p>Now, you have a local copy of your fork of the Spoon-Knife repository!</p>
+
+									<h4>
+									<a id="step-3-configure-git-to-sync-your-fork-with-the-original-spoon-knife-repository" class="anchor" href="#step-3-configure-git-to-sync-your-fork-with-the-original-spoon-knife-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 3: Configure Git to sync your fork with the original Spoon-Knife repository</h4>
+
+									<p>When you fork a project in order to propose changes to the original repository, you can configure Git to pull changes from the original, or <em>upstream</em>, repository into the local clone of your fork.</p>
+
+									<ol>
+									<li>On GitHub, navigate to the <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a> repository.</li>
+									<li>Under the repository name, click <strong>Clone or download</strong>.
+									<img src="/assets/images/help/repository/clone-repo-clone-url-button.png" alt="Clone or download button">
+									</li>
+									<li><p>In the Clone with HTTPs section, click <span class="octicon octicon-clippy" aria-label="The clipboard icon " title="The clipboard icon "></span> to copy the clone URL for the repository.
+									<img src="/assets/images/help/repository/https-url-clone.png" alt="Clone URL button"></p></li>
+									<li><p>Open <span class="platform-mac">Terminal</span><span class="platform-linux">Terminal</span><span class="platform-windows">Git Bash</span>.</p></li>
+									<li>
+									<p>Change directories to the location of the fork you cloned in <a href="#step-2-create-a-local-clone-of-your-fork">Step 2: Create a local clone of your fork</a>.</p>
+
+									<ul>
+									<li>To go to your home directory, type just <code>cd</code> with no other text.</li>
+									<li>To list the files and folders in your current directory, type <code>ls</code>.</li>
+									<li>To go into one of your listed directories, type <code>cd your_listed_directory</code>.</li>
+									<li>To go up one directory, type <code>cd ..</code>.</li>
+									</ul>
+									</li>
+									<li>
+									<p>Type <code>git remote -v</code> and press <strong>Enter</strong>. You'll see the current configured remote repository for your fork.</p>
+
+									<pre class="command-line">
+									<span class="command">git remote -v</span>
+									<span class="output">origin  https://github.com/<em>YOUR_USERNAME</em>/<em>YOUR_FORK</em>.git (fetch)</span>
+									<span class="output">origin  https://github.com/<em>YOUR_USERNAME</em>/<em>YOUR_FORK</em>.git (push)</span>
+									</pre>
+									</li>
+									<li>
+									<p>Type <code>git remote add upstream</code>, and then paste the URL you copied in Step 2 and press <strong>Enter</strong>. It will look like this:</p>
+
+									<pre class="command-line">
+									<span class="command">git remote add upstream https://github.com/octocat/Spoon-Knife.git</span>
+									</pre>
+									</li>
+									<li>
+									<p>To verify the new upstream repository you've specified for your fork, type <code>git remote -v</code> again. You should see the URL for your fork as <code>origin</code>, and the URL for the original repository as <code>upstream</code>.</p>
+
+									<pre class="command-line">
+									<span class="command">git remote -v</span>
+									<span class="output">origin    https://github.com/<em>YOUR_USERNAME</em>/<em>YOUR_FORK</em>.git (fetch)</span>
+									<span class="output">origin    https://github.com/<em>YOUR_USERNAME</em>/<em>YOUR_FORK</em>.git (push)</span>
+									<span class="output">upstream  https://github.com/<em>ORIGINAL_OWNER</em>/<em>ORIGINAL_REPOSITORY</em>.git (fetch)</span>
+									<span class="output">upstream  https://github.com/<em>ORIGINAL_OWNER</em>/<em>ORIGINAL_REPOSITORY</em>.git (push)</span>
+									</pre>
+									</li>
+									</ol>
+
+									<p>Now, you can keep your fork synced with the upstream repository with a few Git commands. For more information, see "<a href="/articles/syncing-a-fork">Syncing a fork</a>."</p>
+
+									<h4>
+									<a id="next-steps" class="anchor" href="#next-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next steps</h4>
+
+									<p>The sky's the limit with the changes you can make to a fork, including:</p>
+
+									<ul>
+									<li>
+									<strong>Creating branches:</strong> <a href="/articles/creating-and-deleting-branches-within-your-repository/"><em>Branches</em></a> allow you to build new features or test out ideas without putting your main project at risk.</li>
+									<li>
+									<strong>Opening pull requests:</strong> If you are hoping to contribute back to the original repository, you can send a request to the original author to pull your fork into their repository by submitting a <a href="/articles/about-pull-requests">pull request</a>.</li>
+									</ul>
+
+									<h3>
+									<a id="find-another-repository-to-fork" class="anchor" href="#find-another-repository-to-fork" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Find another repository to fork</h3>
+
+									<p>Fork a repository to start contributing to a project. You can fork any public repository, or any private repository you can access. For more information, see "<a href="/articles/about-forks">About forks</a>."</p>
+
+									<p>You can browse <a href="https://github.com/explore">Explore</a> to find projects and start contributing to open source repositories. For more information, see "<a href="/articles/finding-open-source-projects-on-github">Finding open source projects on GitHub</a>."</p>
+
+									<h3>
+									<a id="celebrate" class="anchor" href="#celebrate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Celebrate</h3>
+
+									<p>You have now forked a repository, practiced cloning your fork, and configured an upstream repository. What do you want to do next?</p>
+
+									<ul>
+									<li>"<a href="/articles/set-up-git">Set up Git</a>"</li>
+									<li>"<a href="/articles/create-a-repo">Create a repository</a>"</li>
+									<li><strong>Fork a repository</strong></li>
+									<li>"<a href="/articles/be-social">Be social</a>"</li>
+									<li>Connect with people around the world in the <a href="https://github.community">GitHub Community Forum</a>
+									</li>
+									</ul>
+											</div>
+
+											<div class="support-footer">
+									<ul class="article-footer button-nav">
+										
+										<li><a href="https://github.com/contact" class="minibutton" onClick="_gaq.push(['_trackEvent', 'Contact Support', 'Fork a repo', window.location.href]);">
+											<span class="octicon octicon-comment-discussion"></span>
+											Contact a human
+											</a>
+										</li>
+										
+									</ul>
+									</div>
+
+										</div>
+
+										
+
+
+										<div class="clear"></div>
+										</div>
+									</div>
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				</div> <!-- cd-faq-content -->
 			</li>
 
